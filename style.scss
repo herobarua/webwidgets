@@ -1,0 +1,129 @@
+@import 'variable';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/v4-shims';
+
+body {
+  background-color: #f2f3f3;
+}
+
+.widget-content {
+  background-color: #fff;
+
+  &.header {
+    background-color: #e3e3e3;
+  }
+
+  &.footer {
+    background-color: #f2f3f3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &.middle {
+    min-height: calc(100vh - 235px);
+  }
+}
+
+.custom-container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: calc(var(--bs-gutter-x)*.5);
+  padding-left: calc(var(--bs-gutter-x)*.5);
+}
+
+.step{
+  position: relative;
+}
+
+.head-icon {
+  font-size: 50px;
+  color: $black;
+}
+
+.flatpickr-calendar {
+  margin: 0 auto;
+}
+
+.flatpickr-calendar.open,
+.flatpickr-calendar.inline {
+  box-shadow: none !important;
+}
+
+.progress,
+.progress-stacked {
+  --bs-progress-border-radius: 0px;
+  --bs-progress-height: 5px;
+}
+
+.block {
+  margin: 10px;
+  padding: 10px;
+
+  &.socials {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        a {
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          line-height: 50px;
+          text-align: center;
+          background-color: $black;
+          color: $white;
+          font-size: 22px;
+        }
+
+        &+li {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  &.footer{
+    background-color: #e3e3e3;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+.modal-actionsheet {
+  .modal-dialog {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    animation: slide-up 0.3s ease;
+    left: 50%;
+    margin-left: -250px;
+  }
+}
+
+.modal-actionsheet {
+  .modal-content {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
