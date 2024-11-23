@@ -15,25 +15,28 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="widget-content header mb-0">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-5">
                 <div class="block mb-0">
-                  <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/logo_20230707075126.png" alt="">
+                  <img class="img-fluid" src="./images/logo.png" alt="">
                 </div>
               </div>
               <div class="col-7">
                 <div class="block socials">
                   <ul class="d-flex justify-content-end">
-                    <li><a class="phone" href="#"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <li><a class="phone" href="#"><img src="./images/icons/2.png" alt=""></a></li>
+                    <li><a class="comment" href="#"><img src="./images/icons/3.png" alt=""></a></li>
+                    <li><a class="location" href="#"><img src="./images/icons/4.png" alt=""></a></li>
+                    <!-- <li><a class="phone" href="#"><i class="fa-solid fa-phone-volume"></i></a></li>
                     <li><a class="comment" href="#"><i class="fa-solid fa-comment"></i></a></li>
-                    <li><a class="location" href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+                    <li><a class="location" href="#"><i class="fa-solid fa-location-dot"></i></a></li> -->
                   </ul>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="block text-center mt-0 pt-0">
+                <div class="block text-center pt-0">
                   <p class="mb-0"><small>9996 Woodlands Pkwy, The Woodlands, TX 77382, USA</small></p>
                 </div>
               </div>
@@ -41,13 +44,13 @@
             <div class="row">
               <div class="co-md-12">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
           </div>
-          
-          <div class="step" id="step-1">
+
+          <!-- <div class="step" id="step-1">
             <div class="widget-content middle">
               <div class="row">
                 <div class="col-md-12">
@@ -66,144 +69,188 @@
                   </div>
                 </div>
               </div>
-            </div>
-  
-            <div class="widget-content footer mt-0">
-              <div class="custom-container">
+            </div> -->
+            <div class="step" id="step-1">
+              <div class="widget-content middle">
                 <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <button type="button" class="btn btn-primary btn-block w-100 next-btn">Send me an instant verification link</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/1.png" alt=""></p>
+                      <!-- <p class="head-icon text-center mb-0"><i class="fa-solid fa-gear"></i></p> -->
+                      <h4 class="text-center"><strong>Select all services that apply</strong></h4>
+                      <!-- <p class="text-center">We'll use this to send you an instant verification link and to send reminders about your appointment.</p>
+                      <form class="mb-4" action="">
+                        <input type="tel" class="form-control form-control-lg" placeholder="208-936-5000">
+                      </form>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ionicActionSheet">
+                          Actions
+                        </button>
+                      </div> -->
 
-          <div class="step" id="step-2" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <div class="alert alert-success text-center">
-                      <p><i class="fa-solid fa-circle-check"></i></p>
-                      <p>Ok, we just sent you a text message. Click on the link to continue your reservation!</p>
-                    </div>
-                  </div>
-                  <div class="block">
-                    <h5 class="text-center">Or, enter the unique code from the message to continue</h5>
-                    <form action="">
-                      <div class="d-flex gap-2">
-                        <input type="tel" class="form-control form-control-lg text-center" placeholder="" value="1">
-                        <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                        <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                        <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                        <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                        <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                      </div>
-                      <div class="my-3">
-                        <button type="button" class="btn btn-primary btn-block w-100 next-btn">Ok, I’ve entered the code to continue</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="widget-content footer mt-0">
-              <div class="custom-container">
-                <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-7">
-                          <a class="btn btn-link btn-block" href="#">Didn’t get the reservation link?</a>
-                        </div>
-                        <div class="col-5">
-                          <button type="button" class="btn btn-dark btn-block w-100">Try again!</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                      <div class="d-grid gap-2 pt-4" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck1">
+                          <h5 class="mb-0"><strong>Oil Change</strong></h5>
+                          <div>Service description goes here</div>
+                        </label>
 
-          <div class="step" id="step-3" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <p class="head-icon text-center"><i class="fa-solid fa-hand"></i></p>
-                    <h4 class="text-center">Hi Gracie, welcome back!</h4>
-                    <p class="text-center">What type of appointment is this?</p>
-                    <form action="">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          I’ll stay with my vehicle
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck2">
+                          <h5 class="mb-0"><strong>Tire Rotation</strong></h5>
+                          <div>Service description goes here</div>
+                        </label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck3">
+                          <h5 class="mb-0"><strong>State Inspection</strong></h5>
+                          <div>Service description goes here</div>
+                        </label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck4">
+                          <h5 class="mb-0"><strong>Brakes</strong></h5>
+                          <div>Service description goes here</div>
                         </label>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Default checked radio
-                        </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <button type="button" class="btn btn-primary btn-lg btn-block w-100 next-btn">Start my reservation ></button>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="widget-content footer mt-0">
-              <div class="custom-container">
+
+            <div class="step" id="step-2" style="display: none;">
+              <div class="widget-content middle">
                 <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                  <div class="col-md-12">
+                    <!-- <div class="block">
+                      <div class="alert alert-success text-center">
+                        <p><i class="fa-solid fa-circle-check"></i></p>
+                        <p>Ok, we just sent you a text message. Click on the link to continue your reservation!</p>
+                      </div>
+                    </div> -->
+                    <div class="block">
+                      <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/5.png" alt=""></p>
+                      <h4 class="text-center"><strong>To continue add your number</strong></h4>
+                      <p class="text-center mb-0">We'll use this to send you an instant verification link and to send reminders about your appointment.</p>
+                    </div>
+                    
+                    <!-- <div class="block">
+                      <div class="alert alert-success text-center">
+                        <p><i class="fa-solid fa-circle-check"></i></p>
+                        <p>Ok, we just sent you a text message. Click on the link to continue your reservation!</p>
+                      </div>
+                    </div> -->
+                    <div class="block mt-0 pt-0">
+                       <form class="mb-4" action="">
+                        <div class="mb-3">
+                          <input type="tel" class="form-control form-control-lg" placeholder="208-936-5000">
                         </div>
-                        <div class="col-8">
-                          <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            <small>I agree to receive email and SMS messages from Adam’s Automotive in the Woodlands, TX, which may include marketing. Msg & data rates may apply for SMS. Message frequency may vary. Reply STOP to opt-out. Text HELP for help.  <a href="#">Terms & Conditions / Privacy Policy</a></small>
+                          </label>
+                        </div>
+                      </form>
+                      <!-- <h5 class="text-center">Or, enter the unique code from the message to continue</h5> -->
+                      <!-- <form action="">
+                        <div class="d-flex gap-2">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="" value="1">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                        </div>
+                        <div class="my-3">
+                          <button type="button" class="btn btn-primary btn-block w-100 next-btn">Ok, I’ve entered the code to continue</button>
+                        </div>
+                      </form> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-3">
+                            <button type="button" class="btn btn-dark btn-lg btn-block w-100">Back</button>
+                            <!-- <button type="button" class="btn btn-dark btn-block w-100">Try again!</button> -->
+                          </div>
+                          <div class="col-9">
+                            <!-- <a class="btn btn-link btn-block" href="#">Didn’t get the reservation link?</a> -->
+                            <button type="button" class="btn btn-primary btn-lg btn-block w-100 next-btn">Send my reservation link</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-          </div>
 
-          <div class="step" id="step-4" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <p class="head-icon text-center"><i class="fa-regular fa-calendar-days"></i></p>
-                    <h4 class="text-center">Select a time</h4>
-                    <div id="inline-calendar"></div>
-                    <div class="d-grid d-flex gap-2 pt-4">
-                      <button class="btn btn-outline-primary" type="button">7.30 AM</button>
-                      <button class="btn btn-primary" type="button">8.00 AM</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="widget-content footer mt-0">
-               <div class="custom-container">
+            <div class="step" id="step-3" style="display: none;">
+              <div class="widget-content middle">
                 <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                  <div class="col-md-12">
+                    <div class="block">
+                      <div class="alert alert-success text-center">
+                        <p><i class="fa-solid fa-circle-check"></i></p>
+                        <p>Ok, we just sent you a text message. Click on the link to continue your reservation!</p>
+                      </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="block mt-0 pt-0"> 
+                      <h5 class="text-center">Or, enter the unique code from the message to continue</h5>
+                      <form action="">
+                        <div class="d-flex gap-2">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="" value="1">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
                         </div>
-                        <div class="col-8">
-                          <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
+                        <div class="my-3">
+                          <button type="button" class="btn btn-primary btn-block w-100 next-btn">Ok, I’ve entered the code to continue</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-3">
+                            <button type="button" class="btn btn-dark btn-lg btn-block w-100">Back</button>
+                            <!-- <button type="button" class="btn btn-dark btn-block w-100">Try again!</button> -->
+                          </div>
+                          <div class="col-9">
+                            <!-- <a class="btn btn-link btn-block" href="#">Didn’t get the reservation link?</a> -->
+                            <button type="button" class="btn btn-primary btn-lg btn-block w-100 next-btn">Send my reservation link</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -211,265 +258,82 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="step" id="step-5" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <p class="head-icon text-center"><i class="fa-solid fa-car"></i></p>
-                    <h4 class="text-center">Select your vehicle</h4>
-                    <form action="">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          2009 Ford Explorer
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          2006 Land Rover LR3
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          2000 Dodge Neon
-                        </label>
-                      </div>
-                      <legend class="text-center">OR</legend>
-                      <div class="d-grid gap-2">
-                        <button class="btn btn-outline-primary" type="button">Choose Other Vehicle</button>
-                        <button class="btn btn-outline-primary" type="button">Enter Custom Vehicle</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="widget-content footer mt-0">
-               <div class="custom-container">
+            <div class="step" id="step-4" style="display: none;">
+              <div class="widget-content middle">
                 <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
-                        </div>
-                        <div class="col-8">
-                          <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="step" id="step-6" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <p class="head-icon text-center"><i class="fa-solid fa-circle-question"></i></p>
-                    <h4 class="text-center">Tell us why you’re visiting</h4>
-                    <form action="">
-                      <div class="mb-3">
-                        <div class="d-grid d-flex gap-2">
-                          <button class="btn btn-outline-primary" type="button">Example 1</button>
-                          <button class="btn btn-outline-primary" type="button">Example 2</button>
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                          <option selected>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Optional Symptoms Notes"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="widget-content footer mt-0">
-               <div class="custom-container">
-                <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
-                        </div>
-                        <div class="col-8">
-                          <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="step" id="step-7" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <p class="head-icon text-center"><i class="fa-solid fa-screwdriver-wrench"></i></p>
-                    <h4 class="text-center">Select your desired services</h4>
-                    <form action="">
-                      <div class="mb-3">
-                        <div class="d-grid d-flex gap-2">
-                          <button class="btn btn-outline-primary" type="button">Example 1</button>
-                          <button class="btn btn-outline-primary" type="button">Example 2</button>
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                          <option selected>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Optional Service Notes"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="widget-content footer mt-0">
-               <div class="custom-container">
-                <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
-                        </div>
-                        <div class="col-8">
-                            <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="step" id="step-8" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <p class="head-icon text-center"><i class="fa-solid fa-thumbs-up"></i></p>
-                    <h4 class="text-center">Select any of the services we previously recommended that you’d like us to revisit</h4>
-                    <form action="">
-                      <div class="mb-3">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center"><i class="fa-solid fa-hand"></i></p>
+                      <h4 class="text-center">Hi Gracie, welcome back!</h4>
+                      <p class="text-center">What type of appointment is this?</p>
+                      <form action="">
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                           <label class="form-check-label" for="flexRadioDefault1">
-                           BG Fluid Exchange<small class="d-block">Recommended previously on 9/12/24 (100,311 miles)</small>
+                            I’ll stay with my vehicle
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                           <label class="form-check-label" for="flexRadioDefault2">
-                            Transmission Flush<small class="d-block">Recommended previously on 3/2/24 (92,400 miles)</small>
+                            Default checked radio
                           </label>
                         </div>
-                      </div>
-                      <div class="mb-3">
-                        <div class="d-grid gap-2">
-                          <button class="btn btn-outline-primary" type="button">No thanks, not in my budget right now</button>
-                          <button class="btn btn-outline-primary" type="button">No thanks, I had these done elsewhere</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="widget-content footer mt-0">
-               <div class="custom-container">
-                <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
-                        </div>
-                        <div class="col-8">
-                          <a class="btn btn-primary w-100 next-btn" href="#">Submit my reservation</a>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
-
-            </div>
-          </div>
-
-          <div class="step" id="step-9" style="display: none;">
-            <div class="widget-content middle">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="block">
-                    <div class="alert alert-success text-center">
-                      <p><i class="fa-solid fa-circle-check"></i></p>
-                      <p>Ok, we’ve got you reserved!</p>
-                    </div>
-                  </div>
-                  <div class="block">
-                    <div class="row align-items-center">
-                      <div class="col-3">
-                        <img class="img-fluid" src="https://www.instantautosite.net/images/vehicle_makes/ford_carmd.png" alt="">
-                      </div>
-                      <div class="col-9">
-                        <h4 class="mb-0"><strong>2000 BMW 330i</strong></h4>
-                        <p class="mb-0">4.5 Liter (sti)</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <h5><strong>Reservation scheduled</strong></h5>
-                        <div class="add-calender d-flex">
-                          <i class="fa-regular fa-calendar-plus"></i>
-                          <div class="calender-data">
-                            <div class="time">9:00 AM</div>
-                            <div class="day">TUESDAY</div>
-                            <div class="date">Feb 24th, 2024</div>
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-4">
+                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                          </div>
+                          <div class="col-8">
+                            <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
                           </div>
                         </div>
-                        <div class="form-check form-switch py-2">
-                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                          <label class="form-check-label" for="flexSwitchCheckDefault">Send me a text reminder 1 day before</label>
-                        </div>
-                        <button class="btn btn-outline-primary" type="button"><i class="fa-solid fa-calendar-plus pr-3"></i>Add to Calendar</button>
-                        <div class="banner-image pt-3">
-                          <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/galleryimage/galleryimage_20200912081104.jpg" alt="">
-                        </div>
-                        <div class="d-grid d-flex gap-2 pt-3">
-                          <button class="btn btn-success" type="button">Confirm</button>
-                          <button class="btn btn-danger" type="button">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="step" id="step-5" style="display: none;">
+              <div class="widget-content middle">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center"><i class="fa-regular fa-calendar-days"></i></p>
+                      <h4 class="text-center">Select a time</h4>
+                      <div id="inline-calendar"></div>
+                      <div class="d-grid d-flex gap-2 pt-4">
+                        <button class="btn btn-outline-primary" type="button">7.30 AM</button>
+                        <button class="btn btn-primary" type="button">8.00 AM</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-4">
+                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                          </div>
+                          <div class="col-8">
+                            <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -477,23 +341,288 @@
                 </div>
               </div>
             </div>
-            
-            <div class="widget-content footer mt-0">
-               <div class="custom-container">
+
+            <div class="step" id="step-6" style="display: none;">
+              <div class="widget-content middle">
                 <div class="row">
-                  <div class="col-md-5 mx-auto">
-                    <div class="block footer">
-                      <a class="btn btn-primary w-100" href="#">Sorry, I need to change the time & date</a>
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center"><i class="fa-solid fa-car"></i></p>
+                      <h4 class="text-center">Select your vehicle</h4>
+                      <form action="">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            2009 Ford Explorer
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            2006 Land Rover LR3
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            2000 Dodge Neon
+                          </label>
+                        </div>
+                        <legend class="text-center">OR</legend>
+                        <div class="d-grid gap-2">
+                          <button class="btn btn-outline-primary" type="button">Choose Other Vehicle</button>
+                          <button class="btn btn-outline-primary" type="button">Enter Custom Vehicle</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-4">
+                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                          </div>
+                          <div class="col-8">
+                            <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="step" id="step-7" style="display: none;">
+              <div class="widget-content middle">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center"><i class="fa-solid fa-circle-question"></i></p>
+                      <h4 class="text-center">Tell us why you’re visiting</h4>
+                      <form action="">
+                        <div class="mb-3">
+                          <div class="d-grid d-flex gap-2">
+                            <button class="btn btn-outline-primary" type="button">Example 1</button>
+                            <button class="btn btn-outline-primary" type="button">Example 2</button>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Optional Symptoms Notes"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-4">
+                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                          </div>
+                          <div class="col-8">
+                            <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
+            <div class="step" id="step-8" style="display: none;">
+              <div class="widget-content middle">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center"><i class="fa-solid fa-screwdriver-wrench"></i></p>
+                      <h4 class="text-center">Select your desired services</h4>
+                      <form action="">
+                        <div class="mb-3">
+                          <div class="d-grid d-flex gap-2">
+                            <button class="btn btn-outline-primary" type="button">Example 1</button>
+                            <button class="btn btn-outline-primary" type="button">Example 2</button>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Optional Service Notes"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-4">
+                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                          </div>
+                          <div class="col-8">
+                            <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="step" id="step-9" style="display: none;">
+              <div class="widget-content middle">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <p class="head-icon text-center"><i class="fa-solid fa-thumbs-up"></i></p>
+                      <h4 class="text-center">Select any of the services we previously recommended that you’d like us to revisit</h4>
+                      <form action="">
+                        <div class="mb-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              BG Fluid Exchange<small class="d-block">Recommended previously on 9/12/24 (100,311 miles)</small>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Transmission Flush<small class="d-block">Recommended previously on 3/2/24 (92,400 miles)</small>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary" type="button">No thanks, not in my budget right now</button>
+                            <button class="btn btn-outline-primary" type="button">No thanks, I had these done elsewhere</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <div class="row">
+                          <div class="col-4">
+                            <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
+                          </div>
+                          <div class="col-8">
+                            <a class="btn btn-primary w-100 next-btn" href="#">Submit my reservation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="step" id="step-10" style="display: none;">
+              <div class="widget-content middle">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <div class="alert alert-success text-center">
+                        <p><i class="fa-solid fa-circle-check"></i></p>
+                        <p>Ok, we’ve got you reserved!</p>
+                      </div>
+                    </div>
+                    <div class="block">
+                      <div class="row align-items-center">
+                        <div class="col-3">
+                          <img class="img-fluid" src="https://www.instantautosite.net/images/vehicle_makes/ford_carmd.png" alt="">
+                        </div>
+                        <div class="col-9">
+                          <h4 class="mb-0"><strong>2000 BMW 330i</strong></h4>
+                          <p class="mb-0">4.5 Liter (sti)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <h5><strong>Reservation scheduled</strong></h5>
+                          <div class="add-calender d-flex">
+                            <i class="fa-regular fa-calendar-plus"></i>
+                            <div class="calender-data">
+                              <div class="time">9:00 AM</div>
+                              <div class="day">TUESDAY</div>
+                              <div class="date">Feb 24th, 2024</div>
+                            </div>
+                          </div>
+                          <div class="form-check form-switch py-2">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Send me a text reminder 1 day before</label>
+                          </div>
+                          <button class="btn btn-outline-primary" type="button"><i class="fa-solid fa-calendar-plus pr-3"></i>Add to Calendar</button>
+                          <div class="banner-image pt-3">
+                            <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/galleryimage/galleryimage_20200912081104.jpg" alt="">
+                          </div>
+                          <div class="d-grid d-flex gap-2 pt-3">
+                            <button class="btn btn-success" type="button">Confirm</button>
+                            <button class="btn btn-danger" type="button">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-md-5 mx-auto">
+                      <div class="block footer">
+                        <a class="btn btn-primary w-100" href="#">Sorry, I need to change the time & date</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
   <div class="modal fade modal-actionsheet" id="ionicActionSheet" tabindex="-1" aria-labelledby="ionicActionSheetLabel" aria-hidden="true">
@@ -511,13 +640,13 @@
       </div>
     </div>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
       flatpickr("#inline-calendar", {
-        inline: true,     // This makes the calendar display inline
+        inline: true, // This makes the calendar display inline
         dateFormat: "Y-m-d", // Customize the date format as needed
       });
     });
@@ -527,40 +656,39 @@
       const steps = document.querySelectorAll('.step');
 
       function showStep(index) {
-          // Hide all steps
-          steps.forEach(step => step.style.display = 'none');
-          
-          // Show the current step
-          steps[index].style.display = 'block';
+        // Hide all steps
+        steps.forEach(step => step.style.display = 'none');
+
+        // Show the current step
+        steps[index].style.display = 'block';
       }
 
       function nextStep() {
-          if (currentStep < steps.length - 1) {
-              currentStep++;
-              showStep(currentStep);
-          }
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
       }
 
       function prevStep() {
-          if (currentStep > 0) {
-              currentStep--;
-              showStep(currentStep);
-          }
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
       }
 
       // Attach event listeners to the buttons
       document.querySelectorAll('.next-btn').forEach(btn => {
-          btn.addEventListener('click', nextStep);
+        btn.addEventListener('click', nextStep);
       });
 
       document.querySelectorAll('.prev-btn').forEach(btn => {
-          btn.addEventListener('click', prevStep);
+        btn.addEventListener('click', prevStep);
       });
 
       // Show the initial step
       showStep(currentStep);
-  });
-
+    });
   </script>
 </body>
 
