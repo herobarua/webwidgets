@@ -90,25 +90,25 @@
 
                       <div class="d-grid gap-2 pt-4" role="group" aria-label="Basic checkbox toggle button group">
                         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck1">
+                        <label class="btn btn-outline-primary w-100 text-start p-3" for="btncheck1">
                           <h5 class="mb-0"><strong>Oil Change</strong></h5>
                           <div>Service description goes here</div>
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck2">
+                        <label class="btn btn-outline-primary w-100 text-start p-3" for="btncheck2">
                           <h5 class="mb-0"><strong>Tire Rotation</strong></h5>
                           <div>Service description goes here</div>
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck3">
+                        <label class="btn btn-outline-primary w-100 text-start p-3" for="btncheck3">
                           <h5 class="mb-0"><strong>State Inspection</strong></h5>
                           <div>Service description goes here</div>
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                        <label class="btn btn-outline-secondary w-100 text-start p-3" for="btncheck4">
+                        <label class="btn btn-outline-primary w-100 text-start p-3" for="btncheck4">
                           <h5 class="mb-0"><strong>Brakes</strong></h5>
                           <div>Service description goes here</div>
                         </label>
@@ -210,13 +210,12 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="block">
-                      <div class="alert alert-success text-center">
-                        <p><i class="fa-solid fa-circle-check"></i></p>
-                        <p>Ok, we just sent you a text message. Click on the link to continue your reservation!</p>
+                      <div class="alert alert-success py-4 text-center">
+                        <p><img src="./images/icons/12.png" alt=""></p>
+                        <!-- <p><i class="fa-solid fa-circle-check"></i></p> -->
+                        <p class="mb-0">Ok, we just sent you a text message. Click on the link to continue your reservation!</p>
                       </div>
                     </div>
-                    
-                    
                     
                     <div class="block mt-0 pt-0"> 
                       <h5 class="text-center">Or, enter the unique code from the message to continue</h5>
@@ -230,7 +229,7 @@
                           <input type="tel" class="form-control form-control-lg text-center" placeholder="">
                         </div>
                         <div class="my-3">
-                          <button type="button" class="btn btn-primary btn-block w-100 next-btn">Ok, I’ve entered the code to continue</button>
+                          <button type="button" class="btn btn-primary btn-lg btn-block w-100 next-btn">Ok, I’ve entered the code to continue</button>
                         </div>
                       </form>
                     </div>
@@ -264,11 +263,29 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="block">
-                      <p class="head-icon text-center"><i class="fa-solid fa-hand"></i></p>
-                      <h4 class="text-center">Hi Gracie, welcome back!</h4>
-                      <p class="text-center">What type of appointment is this?</p>
+                      <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/13.png" alt=""></p>
+                      <!-- <p class="head-icon text-center mb-0"><i class="fa-solid fa-gear"></i></p> -->
+                      <h4 class="text-center"><strong>What type of appointment is this?</strong></h4>
+                    </div>
+                    <div class="block">
+                      <!-- <p class="head-icon text-center"><i class="fa-solid fa-hand"></i></p> -->
+                      <!-- <h4 class="text-center">Hi Gracie, welcome back!</h4> -->
+                      <!-- <p class="text-center">What type of appointment is this?</p> -->
                       <form action="">
-                        <div class="form-check">
+
+                        <div class="d-grid gap-2" role="group" aria-label="Basic checkbox toggle button group">
+                          <input type="radio" class="btn-check" name="options-outlined" id="btncheck41" autocomplete="off">
+                          <label class="btn btn-outline-primary w-100 text-start p-3" for="btncheck41">
+                            I'll stay with my vehicle
+                          </label>
+
+                          <input type="radio" class="btn-check" name="options-outlined" id="btncheck42" autocomplete="off">
+                          <label class="btn btn-outline-primary w-100 text-start p-3" for="btncheck42">
+                            I'll drop off my vehicle
+                          </label>
+
+                        </div>
+                        <!-- <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                           <label class="form-check-label" for="flexRadioDefault1">
                             I’ll stay with my vehicle
@@ -279,7 +296,7 @@
                           <label class="form-check-label" for="flexRadioDefault2">
                             Default checked radio
                           </label>
-                        </div>
+                        </div> -->
                       </form>
                     </div>
                   </div>

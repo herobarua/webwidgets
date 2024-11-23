@@ -39,6 +39,19 @@ body {
   padding-left: calc(var(--bs-gutter-x)*.5);
 }
 
+.alert{
+  &.alert-success{
+    border: 0px;
+    background-color: #39B54A;
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+    img{
+      width: 60px;
+    }
+  }
+}
+
 .step{
   position: relative;
 }
