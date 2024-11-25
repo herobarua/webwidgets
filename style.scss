@@ -11,6 +11,11 @@ body {
   font-size: 17px;
 }
 
+.widget-wrap{
+  max-width: 520px;
+  margin: 0 auto;
+}
+
 .widget-content {
   background-color: #fff;
 
@@ -33,10 +38,11 @@ body {
 }
 
 .custom-container{
-  max-width: 1320px;
+  // max-width: 1320px;
+  max-width: 520px;
   margin: 0 auto;
-  padding-right: calc(var(--bs-gutter-x)*.5);
-  padding-left: calc(var(--bs-gutter-x)*.5);
+  // padding-right: calc(var(--bs-gutter-x)*.5);
+  // padding-left: calc(var(--bs-gutter-x)*.5);
 }
 
 .alert{
