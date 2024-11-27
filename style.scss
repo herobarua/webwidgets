@@ -41,10 +41,10 @@ body {
 
 .custom-container{
   // max-width: 1320px;
-  max-width: 520px;
+  max-width: calc(520px + var(--bs-gutter-x));
   margin: 0 auto;
-  // padding-right: calc(var(--bs-gutter-x)*.5);
-  // padding-left: calc(var(--bs-gutter-x)*.5);
+  padding-right: calc(var(--bs-gutter-x)*.5);
+  padding-left: calc(var(--bs-gutter-x)*.5);
 }
 
 .alert{
@@ -247,57 +247,60 @@ body {
   }
 }
 
-/* Base Timeline Container */
+.vehicle{
+  position: relative;
+  z-index: 1;
+  &__image{
+    width: 100px;
+  }
+  &__description{
+    padding-left: 15px;
+  }
+}
+
 .timeline {
   position: relative;
   margin: 20px 0;
-  padding-left: 50px; /* Extra space for the line */
-}
+  padding-left: 24.5px;
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 25px; /* Centered with respect to the dots */
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background-color: #ccc; /* Timeline line color */
-  z-index: 0;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    left: 49px;
+    top: -45px;
+    bottom: 35px;
+    width: 1px;
+    background-color: #cfcfcf;
+    z-index: 0;
+  }
 
-/* Timeline Item */
-.timeline-item {
-  position: relative;
-  margin-bottom: 20px;
-}
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+    &:last-child{
+      background-color: $white;
+    }
+  }
+  &__dot {
+    position: absolute;
+    left: 17px;
+    width: 16px;
+    height: 16px;
+    background-color: #ea392c;
+    border-radius: 50%;
+    z-index: 1;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px $black;
+  }
+  &__content {
+    margin-left: 64px;
+    font-family: Arial, sans-serif;
 
-/* Timeline Dot */
-.timeline-dot {
-  position: absolute;
-  left: 18px; /* Center the dot on the line */
-  width: 16px;
-  height: 16px;
-  background-color: #007bff; /* Dot color */
-  border-radius: 50%;
-  z-index: 1;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #007bff;
-}
-
-/* Timeline Content */
-.timeline-content {
-  margin-left: 50px; /* Space the content from the timeline */
-  font-family: Arial, sans-serif;
-}
-
-.timeline-content h3 {
-  margin: 0 0 5px;
-  font-size: 18px;
-  color: #333;
-}
-
-.timeline-content p {
-  margin: 0;
-  color: #666;
+    h5 {
+      margin: 0 0 5px;
+      font-size: 22px;
+      color: $black;
+    }
+  }
 }
 
