@@ -324,10 +324,19 @@
                       <div class="block">
                         <div id="inline-calendar"></div>
                       </div>
-                      <div class="block">
+                      <div class="block time-slots">
                         <div class="d-grid d-flex gap-2 pt-4">
-                          <button class="btn btn-outline-primary" type="button">7.30 AM</button>
-                          <button class="btn btn-primary" type="button">8.00 AM</button>
+                          <input type="radio" class="btn-check" name="timeSlot" id="timecheck1" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="timecheck1">7.30 AM</label>
+
+                          <input type="radio" class="btn-check" name="timeSlot" id="timecheck2" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="timecheck2">8.00 AM</label>
+
+                          <input type="radio" class="btn-check" name="timeSlot" id="timecheck3" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="timecheck3">8.30 AM</label>
+
+                          <!-- <button class="btn btn-outline-primary" type="button">7.30 AM</button>
+                          <button class="btn btn-primary" type="button">8.00 AM</button> -->
                         </div>
                       </div>
                     </div>
@@ -335,17 +344,13 @@
                 </div>
                 <div class="widget-content footer mt-0">
                   <div class="custom-container">
-                    <div class="row">
-                      <div class="col-md-5 mx-auto">
-                        <div class="block footer">
-                          <div class="row">
-                            <div class="col-4">
-                              <button type="button" class="btn btn-dark btn-block w-100 prev-btn">Back</button>
-                            </div>
-                            <div class="col-8">
-                              <a class="btn btn-primary w-100 next-btn" href="#">Next</a>
-                            </div>
-                          </div>
+                    <div class="block footer">
+                      <div class="row">
+                        <div class="col-3">
+                          <button type="button" class="btn btn-dark btn-lg btn-block w-100 prev-btn">Back</button>
+                        </div>
+                        <div class="col-9">
+                          <a class="btn btn-primary btn-lg w-100 next-btn" href="#">Next</a>
                         </div>
                       </div>
                     </div>

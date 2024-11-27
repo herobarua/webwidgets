@@ -71,8 +71,47 @@ body {
   }
 }
 
+.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month, .flatpickr-months .flatpickr-next-month.flatpickr-prev-month{
+  left: 10px;
+}
+.flatpickr-months .flatpickr-prev-month.flatpickr-next-month, .flatpickr-months .flatpickr-next-month.flatpickr-next-month{
+  right: 10px;
+}
+
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay{
+  background: $blue !important;
+  border-color: $blue !important;
+}
+
 .flatpickr-calendar {
   margin: 0 auto;
+  &.inline{
+    width: 100%;
+    max-width: 100%;
+    .flatpickr-month{
+      height: 44px;
+    }
+    .flatpickr-innerContainer{
+      width: 100%;
+      max-width: 100%;
+      .flatpickr-rContainer{
+        width: 100%;
+        max-width: 100%;
+        .flatpickr-days{
+          width: 100%;
+          max-width: 100%;
+          .dayContainer{
+            width: 100%;
+            max-width: 100%;
+          }
+          .flatpickr-day{
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .flatpickr-calendar.open,
@@ -89,6 +128,11 @@ body {
 .block {
   margin: 10px;
   padding: 10px;
+
+  &.time-slots{
+    border-top: 1px solid #e3e3e3;
+    padding-bottom: 40px;
+  }
 
   &.socials {
     ul {
