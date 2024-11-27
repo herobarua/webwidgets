@@ -246,3 +246,58 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Base Timeline Container */
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 50px; /* Extra space for the line */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px; /* Centered with respect to the dots */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #ccc; /* Timeline line color */
+  z-index: 0;
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+  position: absolute;
+  left: 18px; /* Center the dot on the line */
+  width: 16px;
+  height: 16px;
+  background-color: #007bff; /* Dot color */
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+/* Timeline Content */
+.timeline-content {
+  margin-left: 50px; /* Space the content from the timeline */
+  font-family: Arial, sans-serif;
+}
+
+.timeline-content h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
+}
+
