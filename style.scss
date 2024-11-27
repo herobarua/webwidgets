@@ -192,6 +192,24 @@ body {
     .btn{
       &.btn-outline-primary-custom{
         border-radius: 7px;
+        img{
+          display: none;
+          width: 20px;
+          padding-right: 5px;
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+    .btn-check{
+      &:checked {
+        &+ .btn{
+          &.btn-outline-primary-custom {
+            img {
+              display: inline;
+            }
+          }
+        }
       }
     }
   }
