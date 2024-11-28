@@ -558,29 +558,32 @@
                           <div class="timeline__dot done"></div>
                           <div class="timeline__content">
                             <h5><strong>Reservation scheduled</strong></h5>
-                            <div class="calender">
-                              <div class="d-flex">
-                                <div class="calender__image">
-                                  <img class="img-fluid" src="./images/icons/11.png" alt="">
+                            <button class="timeline__toggle_btn"><i class="fa-solid fa-chevron-up"></i></button>
+                            <div class="timeline__toggle">
+                              <div class="calender">
+                                <div class="d-flex">
+                                  <div class="calender__image">
+                                    <img class="img-fluid" src="./images/icons/11.png" alt="">
+                                  </div>
+                                  <div class="calender__data">
+                                    <div class="calender__time">9:00 AM</div>
+                                    <div class="calender__day">TUESDAY</div>
+                                    <div class="calender__date">Feb 24th, 2024</div>
+                                  </div>
                                 </div>
-                                <div class="calender__data">
-                                  <div class="calender__time">9:00 AM</div>
-                                  <div class="calender__day">TUESDAY</div>
-                                  <div class="calender__date">Feb 24th, 2024</div>
+                                <div class="form-check form-switch py-2">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault"><small>Send me a text reminder <strong>1 day</strong> before</small></label>
                                 </div>
+                                <button class="btn btn-outline-primary-custom" type="button">+ Add to Calendar</button>
                               </div>
-                              <div class="form-check form-switch py-2">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault"><small>Send me a text reminder <strong>1 day</strong> before</small></label>
+                              <div class="timeline__image mt-3">
+                                <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/galleryimage/galleryimage_20200912081104.jpg" alt="">
                               </div>
-                              <button class="btn btn-outline-primary-custom" type="button">+ Add to Calendar</button>
-                            </div>
-                            <div class="timeline__image mt-3">
-                              <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/galleryimage/galleryimage_20200912081104.jpg" alt="">
-                            </div>
-                            <div class="timeline__btns d-grid d-flex gap-2 pt-3">
-                              <button class="btn btn-success" type="button">Confirm</button>
-                              <button class="btn btn-danger" type="button">Cancel</button>
+                              <div class="timeline__btns d-grid d-flex gap-2 pt-3">
+                                <button class="btn btn-success" type="button">Confirm</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -631,6 +634,106 @@
             </div>
 
             <div class="step" id="step-9" style="display: none;">
+              <div class="widget-content middle">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <div class="alert alert-success py-4 text-center">
+                        <p><img src="./images/icons/12.png" alt=""></p>
+                        <p class="mb-0">Ok, we’ve got you reserved!</p>
+                      </div>
+                    </div>
+                    <div class="block">
+                      <div class="vehicle d-flex align-items-center">
+                        <div class="vehicle__image">
+                          <img class="img-fluid" src="https://www.instantautosite.net/images/vehicle_makes/ford_carmd.png" alt="">
+                        </div>
+                        <div class="vehicle__description">
+                          <h4 class="mb-0"><strong>2000 BMW 330i</strong></h4>
+                          <p class="mb-0">4.5 Liter (sti)</p>
+                        </div>
+                      </div>
+                      <div class="timeline">
+                        <div class="timeline__item expire">
+                          <div class="timeline__dot done"></div>
+                          <div class="timeline__content">
+                            <h5><strong>Reservation scheduled</strong></h5>
+                            <button class="timeline__toggle_btn"><i class="fa-solid fa-chevron-up"></i></button>
+                            <div id="step_reservation" class="timeline__toggle">
+                              <div class="calender">
+                                <div class="d-flex">
+                                  <div class="calender__image">
+                                    <img class="img-fluid" src="./images/icons/11.png" alt="">
+                                  </div>
+                                  <div class="calender__data">
+                                    <div class="calender__time">9:00 AM</div>
+                                    <div class="calender__day">TUESDAY</div>
+                                    <div class="calender__date">Feb 24th, 2024</div>
+                                  </div>
+                                </div>
+                                <div class="form-check form-switch py-2">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault"><small>Send me a text reminder <strong>1 day</strong> before</small></label>
+                                </div>
+                                <button class="btn btn-outline-primary-custom" type="button">+ Add to Calendar</button>
+                              </div>
+                              <div class="timeline__image mt-3">
+                                <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/galleryimage/galleryimage_20200912081104.jpg" alt="">
+                              </div>
+                              <div class="timeline__btns d-grid d-flex gap-2 pt-3">
+                                <button class="btn btn-success" type="button">Confirm</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timeline__item">
+                          <div class="timeline__dot"></div>
+                          <div class="timeline__content">
+                            <h5><strong>Enjoy member perks!</strong></h5>
+                            <div class="timeline__box">
+                              <div class="d-flex gap-3 timeline__icons">
+                                <img class="img-fluid" src="./images/icons/17.png" alt="">
+                                <i class="fa-solid fa-percent"></i>
+                                <i class="fa-solid fa-dollar-sign text-primary"></i>
+                              </div>
+                              <h6 class="pt-3"><strong>Get 10% OFF</strong></h6>
+                              <h6>Every purchase</h6>
+                              <p class="pt-4 mb-2"><strong>Do you like to save money and earn rewards?</strong></p>
+                              <p><small>Try our free mobile app experience!</small></p>
+                              <div class="d-flex gap-2 timeline__app_store">
+                                <img class="img-fluid" src="./images/icons/apple.svg" alt="">
+                                <img class="img-fluid" src="./images/icons/google.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="timeline__item">
+                          <div class="timeline__dot"></div>
+                          <div class="timeline__content">
+                            <h5><strong>Steps</strong></h5>
+                            <div class="timeline__box">
+                              <h6><strong>Demo Steps</strong></h6>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-content footer mt-0">
+                <div class="custom-container">
+                  <div class="block footer">
+                      <a class="btn btn-primary next-btn w-100" href="#">Sorry, I need to change the time & date</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step" id="step-10" style="display: none;">
               <div class="widget-content middle">
                 <div class="row">
                   <div class="col-md-12">
@@ -738,6 +841,7 @@
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script type="text/javascript">
@@ -746,6 +850,15 @@
         inline: true, // This makes the calendar display inline
         dateFormat: "Y-m-d", // Customize the date format as needed
       });
+    });
+
+    $('#step_reservation').css('display', 'none');
+
+    $(document).ready(function () {
+        $('.timeline__toggle_btn').click(function () {
+            $(this).next('.timeline__toggle').slideToggle();
+            $(this).toggleClass('active');
+        });
     });
 
     const actionSheetModal = document.getElementById('ionicActionSheet');
