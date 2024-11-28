@@ -34,6 +34,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
   }
 
   &.middle {
@@ -330,7 +331,7 @@ body {
 .calender{
   background-color: #ebebeb;
   border-radius: 10px;
-  padding: 15px;
+  padding: 30px;
   &__image{
     width: 90px;
     padding-right: 10px;
@@ -385,6 +386,39 @@ body {
     z-index: 0;
   }
 
+  &__box{
+    background-color: #ebebeb;
+    border-radius: 10px;
+    padding: 30px;
+    h6{
+      font-size: 35px;
+      line-height: 41px;
+      margin-bottom: 0px;
+      font-weight: 400;
+      strong{
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__icons{
+    img{
+      width: 60px;
+      height: auto;
+    }
+    i{
+      font-size: 60px;
+    }
+  }
+
+  &__app_store{
+    img{
+      max-height: 45px;
+    }
+  }
+
   &__item {
     position: relative;
     margin-bottom: 20px;
@@ -397,11 +431,21 @@ body {
     left: 14px;
     width: 20px;
     height: 20px;
-    // background-color: #ea392c;
+    background-color: #fff;
     border-radius: 50%;
     z-index: 1;
     border: 2px solid #fff;
     box-shadow: 0 0 0 2px $black;
+
+    &.done{
+      &:before {
+        background-color: #39b54a;
+      }
+      &:after {
+        background-color: #39b54a;
+      }
+    }
+
     &:before {
       content: "";
       position: relative;
@@ -431,6 +475,7 @@ body {
   }
   &__content {
     margin-left: 64px;
+    padding-bottom: 20px;
 
     h5 {
       font-size: 27px;
@@ -438,7 +483,7 @@ body {
       margin-bottom: 0px;
       padding-bottom: 10px;
       position: relative;
-      top: -9px;
+      top: -7px;
     }
   }
   &__image{
