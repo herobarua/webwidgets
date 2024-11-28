@@ -633,6 +633,17 @@
       });
     });
 
+    const actionSheetModal = document.getElementById('ionicActionSheet');
+
+    actionSheetModal.addEventListener('hide.bs.modal', (event) => {
+      actionSheetModal.classList.add('slide-down');
+    });
+
+    actionSheetModal.addEventListener('hidden.bs.modal', (event) => {
+      actionSheetModal.classList.remove('slide-down');
+    });
+
+
     document.addEventListener('DOMContentLoaded', function () {
       let currentStep = 0; // Start with the first step
       const steps = document.querySelectorAll('.step');

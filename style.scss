@@ -299,6 +299,25 @@ body {
   }
 }
 
+@keyframes slide-down {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.modal-actionsheet .modal-dialog {
+  animation: slide-up 0.3s ease; /* Default slide-up animation */
+}
+
+.modal-actionsheet.slide-down .modal-dialog {
+  animation: slide-down 0.3s ease; /* Slide-down animation on dismiss */
+}
+
+
 .calender{
   background-color: #ebebeb;
   border-radius: 10px;
