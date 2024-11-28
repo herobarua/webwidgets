@@ -275,11 +275,15 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     animation: slide-up 0.3s ease;
     left: 50%;
-    margin-left: -250px;
+    margin-left: -260px;
   }
+}
+
+.form-select{
+  padding: 10px 15px;
 }
 
 .modal-actionsheet {
@@ -310,11 +314,11 @@ body {
 }
 
 .modal-actionsheet .modal-dialog {
-  animation: slide-up 0.3s ease; /* Default slide-up animation */
+  animation: slide-up 0.3s ease;
 }
 
 .modal-actionsheet.slide-down .modal-dialog {
-  animation: slide-down 0.3s ease; /* Slide-down animation on dismiss */
+  animation: slide-down 0.3s ease;
 }
 
 
