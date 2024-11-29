@@ -98,7 +98,8 @@ body {
     overflow: hidden;
     overflow-y: scroll;
     background-color: #fff;
-    max-height: 600px;
+    height: 515px;
+    // height: 650px;
     scrollbar-width: none;
     padding-bottom: 57px;
     @media (max-width: 767px) {
@@ -133,10 +134,12 @@ body {
 }
 
 .head-icon {
-  font-size: 50px;
   color: $black;
+  i{
+    font-size: 40px;
+  }
   img{
-    width: 50px;
+    width: 40px;
     height: auto;
   }
 }
@@ -230,13 +233,12 @@ body {
       height: auto;
       visibility: hidden;
     }
-
-    
   }
 }
 
 .label{
   position: relative;
+  padding-right: 30px;
   &__image{
     position: absolute;
     right: 0px;
@@ -271,7 +273,7 @@ body {
   &.logo{
     img{
       max-width: 120px;
-      max-height: 60px;
+      max-height: 45px;
     }
   }
 
@@ -328,10 +330,10 @@ body {
 
           // }
           img{
-            width: 50px;
+            width: 40px;
             height: auto;
             @media (max-width: 375px) {
-              width: 40px;
+              width: 35px;
               height: auto;
             }
           }
