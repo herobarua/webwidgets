@@ -476,7 +476,7 @@ input{
 .calender{
   background-color: #ebebeb;
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   &__image{
     width: 90px;
     padding-right: 10px;
@@ -554,15 +554,15 @@ input{
   &__box{
     background-color: #ebebeb;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     h6{
-      font-size: 35px;
-      line-height: 41px;
+      font-size: 30px;
+      line-height: 35px;
       margin-bottom: 0px;
       font-weight: 400;
       strong{
-        font-size: 40px;
-        line-height: 46px;
+        font-size: 35px;
+        line-height: 40px;
         font-weight: 700;
       }
     }
@@ -570,17 +570,17 @@ input{
 
   &__icons{
     img{
-      width: 60px;
+      width: 40px;
       height: auto;
     }
     i{
-      font-size: 60px;
+      font-size: 40px;
     }
   }
 
   &__app_store{
     img{
-      max-height: 45px;
+      max-height: 35px;
     }
   }
 
@@ -659,12 +659,15 @@ input{
     position: relative;
 
     h5 {
-      font-size: 27px;
+      font-size: 20px;
       color: $black;
       margin-bottom: 0px;
       padding-bottom: 10px;
       position: relative;
-      top: -7px;
+      top: -3px;
+    }
+    label{
+      font-size: 13px;
     }
   }
   &__image{
