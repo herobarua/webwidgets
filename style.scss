@@ -19,8 +19,9 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     font-size: 15px;
+    display: inline;
   }
 }
 
@@ -32,6 +33,12 @@ body {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  @media (max-width: 767px) {
+    min-width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+  }
 }
 
 // .progress{
@@ -77,6 +84,12 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    @media (max-width: 767px) {
+      position: fixed;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+    }
   }
 
   &.middle {
@@ -88,6 +101,9 @@ body {
     max-height: 600px;
     scrollbar-width: none;
     padding-bottom: 57px;
+    @media (max-width: 767px) {
+      max-height: none;
+    }
   }
 }
 
@@ -234,6 +250,7 @@ body {
     &+ .btn{
       &.btn-outline-primary-custom {
         background-color: $gray-200;
+        border-color: $blue;
         img {
           visibility: visible;
         }
@@ -245,6 +262,11 @@ body {
 .block {
   margin: 10px;
   padding: 10px;
+
+  @media (max-width: 767px) {
+    margin: 0;
+    padding: 5px;
+  }
 
   &.logo{
     img{
@@ -332,8 +354,8 @@ body {
       font-weight: 700;
       padding: 7px;
     }
-    @media (max-width: 375px) {
-      padding: 10px;
+    @media (max-width: 767px) {
+      padding: 5px;
     }
   }
 }
@@ -343,13 +365,32 @@ body {
   &:focus{
     box-shadow: none;
   }
+  &:has(option:checked:not([value=""])),
+  &:hover {
+    border-color: $blue;
+  }
+  &:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px -6px rgba(0,0,0,.2);
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+  }
 }
 
 textarea{
   &.form-control{
     border-radius: 15px;
+    resize: none;
     &:focus{
       box-shadow: none;
+    }
+    &:not(:placeholder-shown),
+    &:hover {
+      border-color: $blue;
+    }
+    &:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px -6px rgba(0,0,0,.2);
+      transition: all .3s cubic-bezier(.4,0,.2,1);
     }
   }
 }
@@ -359,6 +400,15 @@ input{
     border-radius: 10px;
     &:focus{
       box-shadow: none;
+    }
+    &:not(:placeholder-shown),
+    &:hover {
+      border-color: $blue;
+    }
+    &:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px -6px rgba(0,0,0,.2);
+      transition: all .3s cubic-bezier(.4,0,.2,1);
     }
   }
 }
