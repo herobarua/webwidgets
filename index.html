@@ -29,9 +29,13 @@
                 <div class="col-7">
                   <div class="block socials mb-0 pb-0">
                     <ul class="d-flex justify-content-end">
-                      <li><a class="phone" href="#"><img src="./images/icons/2.png" alt=""></a></li>
+                      <!-- <li><a class="phone" href="#"><img src="./images/icons/2.png" alt=""></a></li>
                       <li><a class="comment" href="#"><img src="./images/icons/3.png" alt=""></a></li>
-                      <li><a class="location" href="javascript;" data-bs-toggle="modal" data-bs-target="#ionicActionSheet"><img src="./images/icons/4.png" alt=""></a></li>
+                      <li><a class="location" href="javascript;" data-bs-toggle="modal" data-bs-target="#ionicActionSheet"><img src="./images/icons/4.png" alt=""></a></li> -->
+                      <li><a id="shop-phone" class="phone" href="#"><i class="fa-solid fa-phone-volume"></i></a></li>
+                      <li><a id="shop-sms" class="comment" href="#"><i class="fa-solid fa-comment-sms"></i></a></li>
+                      <li><a id="shop-location" class="location" href="javascript;" data-bs-toggle="modal" data-bs-target="#ionicActionSheet"><i class="fa-solid fa-location-dot"></i></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -59,18 +63,20 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="block pt-1">
-                      <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/1.png" alt=""></p>
-                      <h4 class="text-center"><strong>Select all services that apply</strong></h4>
+                      <p class="head-icon text-center mb-0 pb-2"><i class="fa-solid fa-screwdriver-wrench"></i></p>
+                      <!-- <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/1.png" alt=""></p> -->
+                      <h4 class="head-title text-center"><strong>Select all services that apply</strong></h4>
                     </div>
-                    <div class="block pt-0 mt-0">
+                    <div class="block pt-0 pt-2">
                       <div class="d-grid gap-2 mb-3" role="group">
                         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck1">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck1">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>Oil Change</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -78,12 +84,13 @@
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck2">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck2">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>Tire Rotation</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -91,12 +98,13 @@
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck3">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck3">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>State Inspection</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -104,12 +112,13 @@
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck4">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck4">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>Brakes</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -135,7 +144,7 @@
               <div class="widget-content footer mt-0">
                 <!-- <div class="custom-container"> -->
                   <div class="block footer">
-                    <button type="button" class="btn btn-primary btn-block w-100 next-btn">Start my reservation ></button>
+                    <button type="button" class="btn btn-primary btn-block w-100 next-btn">Start my reservation <i class="fa-solid fa-angles-right"></i></button>
                   </div>
                 <!-- </div> -->
               </div>
@@ -146,19 +155,20 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="block pt-1">
-                      <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/5.png" alt=""></p>
-                      <h4 class="text-center"><strong>To continue add your number</strong></h4>
-                      <p class="text-center mb-0">We'll use this to send you an instant verification link and to send reminders about your appointment.</p>
+                      <p class="head-icon text-center mb-0 pb-2"><i class="fa-solid fa-phone-volume"></i></p>
+                      <!-- <p class="head-icon text-center mb-0 pb-2"><img src="./images/icons/5.png" alt=""></p> -->
+                      <h4 class="text-center head-title"><strong>To continue add your number</strong></h4>
+                      <p class="text-center head-desc mb-0">We'll use this to send you an instant verification link and to send reminders about your appointment.</p>
                     </div>
-                    <div class="block mt-0 pt-0">
+                    <div class="block mt-0 pt-2">
                       <form class="mb-4" action="">
                         <div class="mb-3">
-                          <input type="tel" class="form-control form-control-lg" placeholder="208-936-5000">
+                          <input type="tel" class="form-control" placeholder="208-936-5000">
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                           <label class="form-check-label form-check-agree" for="flexCheckDefault">
-                            <small>I agree to receive email and SMS messages from Adam’s Automotive in the Woodlands, TX, which may include marketing. Msg & data rates may apply for SMS. Message frequency may vary. Reply STOP to opt-out. Text HELP for help. <a href="#">Terms & Conditions / Privacy Policy</a></small>
+                            <small>I agree to receive email and SMS messages from Adam’s Automotive in the Woodlands, TX, which may include marketing. Msg & data rates may apply for SMS. Message frequency may vary. Reply STOP to opt-out. Text HELP for help. <a href="#">Terms & Conditions</a> / <a href="#">Privacy Policy</a></small>
                           </label>
                         </div>
                       </form>
@@ -196,12 +206,12 @@
                       <h5 class="text-center"><strong>Or, enter the unique code from the message to continue</strong></h5>
                       <form action="">
                         <div class="d-flex gap-2">
-                          <input type="tel" class="form-control form-control-lg text-center" placeholder="" value="1">
-                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
-                          <input type="tel" class="form-control form-control-lg text-center" placeholder="">
+                          <input type="tel" class="form-control text-center" placeholder="" value="1">
+                          <input type="tel" class="form-control text-center" placeholder="">
+                          <input type="tel" class="form-control text-center" placeholder="">
+                          <input type="tel" class="form-control text-center" placeholder="">
+                          <input type="tel" class="form-control text-center" placeholder="">
+                          <input type="tel" class="form-control text-center" placeholder="">
                         </div>
                         <div class="my-3">
                           <button type="button" class="btn btn-primary btn-block w-100 next-btn"><strong>Ok, I've entered the code to continue</strong></button>
@@ -240,24 +250,26 @@
                         <div class="d-grid gap-2" role="group">
 
                           <input type="radio" class="btn-check" name="options-outlined" id="btncheck41" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck41">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck41">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>I'll stay with my vehicle</strong>
                               </div>
                             </div>
                           </label>
 
                           <input type="radio" class="btn-check" name="options-outlined" id="btncheck42" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck42">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck42">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>I'll drop off my vehicle</strong>
                               </div>
                             </div>
@@ -302,7 +314,8 @@
                         <label class="btn btn-outline-primary-custom" for="timecheck1">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
                             <div class="label__data">
                               <strong>7.30 AM</strong>
@@ -314,7 +327,8 @@
                         <label class="btn btn-outline-primary-custom" for="timecheck2">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
                             <div class="label__data">
                               <strong>8.00 AM</strong>
@@ -326,7 +340,8 @@
                         <label class="btn btn-outline-primary-custom" for="timecheck3">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
                             <div class="label__data">
                               <strong>8.30 AM</strong>
@@ -367,36 +382,39 @@
                       <form action="#">
                         <div class="d-grid gap-2 pt-4" role="group">
                           <input type="radio" class="btn-check" name="selectVehicle" id="vehcileCheck1" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="vehcileCheck1">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="vehcileCheck1">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>2009 Ford Explorer</strong>
                               </div>
                             </div>
                           </label>
 
                           <input type="radio" class="btn-check" name="selectVehicle" id="vehcileCheck2" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="vehcileCheck2">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="vehcileCheck2">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>2006 Land Rover LR3</strong>
                               </div>
                             </div>
                           </label>
 
                           <input type="radio" class="btn-check" name="selectVehicle" id="vehcileCheck3" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="vehcileCheck3">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="vehcileCheck3">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>2000 Dodge Neon</strong>
                               </div>
                             </div>
@@ -445,12 +463,13 @@
                       <form action="#">
                         <div class="d-grid gap-2 mb-5" role="group">
                           <input type="checkbox" class="btn-check" id="recommendationCheck1" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="recommendationCheck1">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="recommendationCheck1">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <h5 class="mb-0"><strong>Engine Air Filter Element</strong></h5>
                                 <div><small><strong>Recommended previously on 04/24/2024 (199,653 miles)</strong></small></div>
                               </div>
@@ -459,12 +478,13 @@
                           </label>
 
                           <input type="checkbox" class="btn-check" id="recommendationCheck2" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="recommendationCheck2">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="recommendationCheck2">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <h5 class="mb-0"><strong>Transmission Flush</strong></h5>
                                 <div><small><strong>Recommended previously on 3/2/24 (92,400 miles)</strong></small></div>
                               </div>
@@ -475,12 +495,13 @@
 
                         <div class="d-grid gap-2 divider-top pb-5" role="group">
                           <input type="radio" class="btn-check" name="options-outlined" id="btncheck81" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck81">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck81">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>No thanks, not in my budget right now</strong>
                               </div>
                             </div>
@@ -488,12 +509,13 @@
                           </label>
 
                           <input type="radio" class="btn-check" name="options-outlined" id="btncheck82" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck82">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck82">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>No thanks, I had these done elsewhere</strong>
                               </div>
                             </div>
@@ -501,12 +523,13 @@
                           </label>
 
                           <input type="radio" class="btn-check" name="options-outlined" id="btncheck83" autocomplete="off">
-                          <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck83">
+                          <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck83">
                             <div class="label d-flex align-items-center">
                               <div class="label__image">
-                                <img src="./images/icons/14.png" alt="">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <img src="./images/icons/14.png" alt=""> -->
                               </div>
-                              <div class="label__data ps-2">
+                              <div class="label__data">
                                 <strong>I’m not sure, requires discussion</strong>
                               </div>
                             </div>
@@ -578,7 +601,7 @@
                                   <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                                   <label class="form-check-label" for="flexSwitchCheckDefault"><small>Send me a text reminder <strong>1 day</strong> before</small></label>
                                 </div>
-                                <button class="btn btn-outline-primary-custom" type="button">+ Add to Calendar</button>
+                                <button class="btn btn-outline-primary-custom" type="button"><span class="text-primary">+ Add to Calendar</span></button>
                               </div>
                               <div class="timeline__image mt-3">
                                 <img class="img-fluid" src="https://www.instantautosite.org/images/corporate/galleryimage/galleryimage_20200912081104.jpg" alt="">
@@ -640,12 +663,12 @@
               <div class="widget-content middle">
                 <div class="row">
                   <div class="col-md-12">
-                    <!-- <div class="block pt-1">
+                    <div class="block pt-1">
                       <div class="alert alert-success py-4 text-center">
                         <p><img src="./images/icons/12.png" alt=""></p>
                         <p class="mb-0">Ok, we’ve got you reserved!</p>
                       </div>
-                    </div> -->
+                    </div>
                     <div class="block mt-0 pt-0">
                       <div class="vehicle d-flex align-items-center">
                         <div class="vehicle__image">
@@ -747,12 +770,13 @@
                     <div class="block mt-0 pt-0">
                       <div class="d-grid gap-2 mb-4 pb-2" role="group">
                         <input type="checkbox" class="btn-check" id="btncheck91" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck91">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck91">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>Oil Change</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -760,12 +784,13 @@
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck92" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck92">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck92">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>Tire Rotation</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -773,12 +798,13 @@
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck93" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck93">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck93">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>State Inspection</strong></h5>
                               <div>Service description goes here</div>
                             </div>
@@ -786,12 +812,13 @@
                         </label>
 
                         <input type="checkbox" class="btn-check" id="btncheck94" autocomplete="off">
-                        <label class="btn btn-outline-primary-custom w-100 text-start p-3" for="btncheck94">
+                        <label class="btn btn-outline-primary-custom w-100 text-start" for="btncheck94">
                           <div class="label d-flex align-items-center">
                             <div class="label__image">
-                              <img src="./images/icons/14.png" alt="">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <!-- <img src="./images/icons/14.png" alt=""> -->
                             </div>
-                            <div class="label__data ps-2">
+                            <div class="label__data">
                               <h5 class="mb-0"><strong>Brakes</strong></h5>
                               <div>Service description goes here</div>
                             </div>
