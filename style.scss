@@ -327,7 +327,8 @@ body {
   &:checked {
     &+ .btn{
       &.btn-outline-primary-custom {
-        background-color: $gray-200;
+        background-color: rgba($color: $blue, $alpha: 0.1);
+        // background-color: $gray-200;
         border-color: $blue;
         i,
         img {
