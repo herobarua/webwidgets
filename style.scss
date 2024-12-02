@@ -741,6 +741,9 @@ input{
     }
     i{
       font-size: 40px;
+      &.fa-star{
+        color: $warning;
+      }
     }
   }
 
