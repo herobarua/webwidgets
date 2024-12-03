@@ -47,15 +47,21 @@ actionSheetModal.addEventListener('hidden.bs.modal', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  let currentStep = 2;
+  let currentStep = 0;
   const steps = document.querySelectorAll('.step');
+  const progressBar = document.querySelector('.progress-bar');
+  const totalSteps = steps.length;
+
+  function updateProgressBar() {
+    const progress = ((currentStep + 1) / totalSteps) * 100;
+    progressBar.style.width = `${progress}%`;
+    progressBar.setAttribute('aria-valuenow', progress.toFixed(0));
+  }
 
   function showStep(index) {
-    // Hide all steps
     steps.forEach(step => step.style.display = 'none');
-
-    // Show the current step
     steps[index].style.display = 'block';
+    updateProgressBar();
   }
 
   function nextStep() {
@@ -81,16 +87,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   showStep(currentStep);
+  updateProgressBar();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
     const otpInputs = document.querySelectorAll("#otp_container .form-control");
 
-    // Handle paste event on the first input
     otpInputs[0].addEventListener("paste", function (event) {
         event.preventDefault();
 
-        // Get the pasted data
         const pasteData = (event.clipboardData || window.clipboardData).getData("text");
         
         if (!/^\d{6}$/.test(pasteData)) {
@@ -98,21 +103,23 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Fill the inputs with the pasted data
         otpInputs.forEach((input, index) => {
             input.value = pasteData[index] || "";
         });
     });
 
-    // Automatically move to the next input when a digit is entered
     otpInputs.forEach((input, index) => {
         input.addEventListener("input", function () {
-            if (input.value.length === 1 && index < otpInputs.length - 1) {
+            if (!/^\d$/.test(input.value)) {
+                input.value = "";
+                return;
+            }
+
+            if (index < otpInputs.length - 1) {
                 otpInputs[index + 1].focus();
             }
         });
 
-        // Move to the previous input on backspace
         input.addEventListener("keydown", function (event) {
             if (event.key === "Backspace" && input.value === "" && index > 0) {
                 otpInputs[index - 1].focus();
@@ -120,3 +127,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
