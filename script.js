@@ -52,34 +52,102 @@ document.addEventListener('DOMContentLoaded', function () {
   const progressBar = document.querySelector('.progress-bar');
   const totalSteps = steps.length;
 
+  // Save form data to localStorage
+  function saveFormData() {
+    const formData = {};
+
+    // Save checkbox values
+    const checkboxes = document.querySelectorAll('.step input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+      formData[checkbox.id] = checkbox.checked;
+    });
+
+    // Save text input (phone number) values
+    const textInputs = document.querySelectorAll('.step input[type="tel"], .step input[type="text"], .step input[type="email"]');
+    textInputs.forEach(input => {
+      formData[input.id] = input.value;
+    });
+
+    // Save select values
+    const select = document.querySelectorAll('.step select');
+    select.forEach(selectElement => {
+      formData[selectElement.id] = selectElement.value;
+    });
+
+    // Save textarea values
+    const textareas = document.querySelectorAll('.step textarea');
+    textareas.forEach(textarea => {
+      formData[textarea.id] = textarea.value;
+    });
+
+    // Store form data in localStorage
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+
+  // Load form data from localStorage
+  function loadFormData() {
+    const formData = JSON.parse(localStorage.getItem('formData')) || {};
+
+    // Load checkbox values
+    const checkboxes = document.querySelectorAll('.step input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+      checkbox.checked = formData[checkbox.id] || false;
+    });
+
+    // Load text input (phone number) values
+    const textInputs = document.querySelectorAll('.step input[type="tel"], .step input[type="text"], .step input[type="email"]');
+    textInputs.forEach(input => {
+      input.value = formData[input.id] || '';
+    });
+
+    // Load select values
+    const select = document.querySelectorAll('.step select');
+    select.forEach(selectElement => {
+      selectElement.value = formData[selectElement.id] || '';
+    });
+
+    // Load textarea values
+    const textareas = document.querySelectorAll('.step textarea');
+    textareas.forEach(textarea => {
+      textarea.value = formData[textarea.id] || '';
+    });
+  }
+
+  // Update progress bar based on the current step
   function updateProgressBar() {
     const progress = ((currentStep + 1) / totalSteps) * 100;
     progressBar.style.width = `${progress}%`;
     progressBar.setAttribute('aria-valuenow', progress.toFixed(0));
   }
 
+  // Show the current step
   function showStep(index) {
     steps.forEach(step => step.style.display = 'none');
     steps[index].style.display = 'block';
     updateProgressBar();
   }
 
+  // Move to the next step
   function nextStep() {
     if (currentStep < steps.length - 1) {
       currentStep++;
-      localStorage.setItem('currentStep', currentStep); // Save current step to localStorage
+      localStorage.setItem('currentStep', currentStep); // Save current step
+      saveFormData(); // Save form data
       showStep(currentStep);
     }
   }
 
+  // Move to the previous step
   function prevStep() {
     if (currentStep > 0) {
       currentStep--;
-      localStorage.setItem('currentStep', currentStep); // Save current step to localStorage
+      localStorage.setItem('currentStep', currentStep); // Save current step
+      saveFormData(); // Save form data
       showStep(currentStep);
     }
   }
 
+  // Event listeners for next and previous buttons
   document.querySelectorAll('.next-btn').forEach(btn => {
     btn.addEventListener('click', nextStep);
   });
@@ -88,8 +156,9 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', prevStep);
   });
 
+  // Load saved form data and show the correct step
+  loadFormData();
   showStep(currentStep);
-  updateProgressBar();
 });
 
 document.addEventListener("DOMContentLoaded", function () {

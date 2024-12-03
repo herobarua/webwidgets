@@ -578,6 +578,13 @@ input{
   .modal-content {
     border-radius: 15px 15px 0 0;
     overflow: hidden;
+    .modal-header{
+      padding: 10px;
+      .modal-title{
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
   }
 }
 
