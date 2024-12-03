@@ -912,6 +912,11 @@ input{
   &__image{
     border-radius: 10px;
     overflow: hidden;
+    video{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
   }
   &__btns{
     .btn{
