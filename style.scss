@@ -285,6 +285,12 @@ body {
   .form-check-input{
     margin-left: -1.8em;
   }
+  &.form-switch{
+    padding-left: 2.2em;
+    .form-check-input{
+      margin-left: -2.2em;
+    }
+  }
 }
 
 .btn {
@@ -643,7 +649,7 @@ input{
     &.form-switch{
       small{
         position: relative;
-        top: -1px;
+        top: 2px;
         @media (max-width: 375px) {
           font-size: 9px;
         }
