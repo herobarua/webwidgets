@@ -167,7 +167,7 @@
                     <div class="block mt-0 pt-0">
                       <form class="mb-4" action="">
                         <div class="mb-3">
-                          <input type="tel" class="form-control" placeholder="208-936-5000">
+                          <input type="tel" class="form-control telephone-input" placeholder="(xxx) xxx-xxxx">
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -212,13 +212,13 @@
                     <div class="block mt-0 pt-0">
                       <form action="">
                         <div class="otp-form mx-auto">
-                          <div class="d-flex gap-2">
-                            <input type="tel" class="form-control text-center" placeholder="" value="1">
-                            <input type="tel" class="form-control text-center" placeholder="">
-                            <input type="tel" class="form-control text-center" placeholder="">
-                            <input type="tel" class="form-control text-center" placeholder="">
-                            <input type="tel" class="form-control text-center" placeholder="">
-                            <input type="tel" class="form-control text-center" placeholder="">
+                          <div class="d-flex gap-2" id="otp_container">
+                            <input type="tel" class="form-control text-center" placeholder="" maxlength="1">
+                            <input type="tel" class="form-control text-center" placeholder="" maxlength="1">
+                            <input type="tel" class="form-control text-center" placeholder="" maxlength="1">
+                            <input type="tel" class="form-control text-center" placeholder="" maxlength="1">
+                            <input type="tel" class="form-control text-center" placeholder="" maxlength="1">
+                            <input type="tel" class="form-control text-center" placeholder="" maxlength="1">
                           </div>
                         </div>
                         <div class="my-3">
@@ -1375,76 +1375,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-      flatpickr("#inline-calendar", {
-        inline: true, // This makes the calendar display inline
-        dateFormat: "Y-m-d", // Customize the date format as needed
-      });
-    });
-
-    $('#step_reservation').css('display', 'none');
-
-    $(document).ready(function () {
-        $('.timeline__toggle_btn').click(function () {
-            $(this).next('.timeline__toggle').slideToggle();
-            $(this).toggleClass('active');
-        });
-    });
-
-    const actionSheetModal = document.getElementById('ionicActionSheet');
-
-    actionSheetModal.addEventListener('hide.bs.modal', (event) => {
-      actionSheetModal.classList.add('slide-down');
-    });
-
-    actionSheetModal.addEventListener('hidden.bs.modal', (event) => {
-      actionSheetModal.classList.remove('slide-down');
-    });
-
-    document.querySelector('select').addEventListener('change', function () {
-      this.setAttribute('value', this.value);
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-      let currentStep = 0; // Start with the first step
-      const steps = document.querySelectorAll('.step');
-
-      function showStep(index) {
-        // Hide all steps
-        steps.forEach(step => step.style.display = 'none');
-
-        // Show the current step
-        steps[index].style.display = 'block';
-      }
-
-      function nextStep() {
-        if (currentStep < steps.length - 1) {
-          currentStep++;
-          showStep(currentStep);
-        }
-      }
-
-      function prevStep() {
-        if (currentStep > 0) {
-          currentStep--;
-          showStep(currentStep);
-        }
-      }
-
-      // Attach event listeners to the buttons
-      document.querySelectorAll('.next-btn').forEach(btn => {
-        btn.addEventListener('click', nextStep);
-      });
-
-      document.querySelectorAll('.prev-btn').forEach(btn => {
-        btn.addEventListener('click', prevStep);
-      });
-
-      // Show the initial step
-      showStep(currentStep);
-    });
-  </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
