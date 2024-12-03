@@ -47,7 +47,7 @@ actionSheetModal.addEventListener('hidden.bs.modal', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  let currentStep = 0;
+  let currentStep = localStorage.getItem('currentStep') ? parseInt(localStorage.getItem('currentStep')) : 0;
   const steps = document.querySelectorAll('.step');
   const progressBar = document.querySelector('.progress-bar');
   const totalSteps = steps.length;
@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function nextStep() {
     if (currentStep < steps.length - 1) {
       currentStep++;
+      localStorage.setItem('currentStep', currentStep); // Save current step to localStorage
       showStep(currentStep);
     }
   }
@@ -74,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function prevStep() {
     if (currentStep > 0) {
       currentStep--;
+      localStorage.setItem('currentStep', currentStep); // Save current step to localStorage
       showStep(currentStep);
     }
   }
